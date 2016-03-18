@@ -1,0 +1,3 @@
+services:
+    objref.example:
+        class: ObjRef\ExampleBundle\Service\ExampleService
