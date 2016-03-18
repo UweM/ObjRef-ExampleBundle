@@ -6,10 +6,7 @@
     "require": {
         "UweM/ObjRef-RemoteBundle": "dev-master"
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url":  "git@github.com:UweM/ObjRef-RemoteBundle.git"
-        }
-    ]
+    "autoload": {
+        "psr-4": { "ObjRef\\ExampleBundle\\": "" }
+    }
 }
