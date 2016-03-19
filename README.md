@@ -11,7 +11,7 @@ If you get errors like `"config.platform.php" version (5.5.9) does not satisfy t
 make sure to remove the config.platform.php part out of the generated `composer.json` file
 ## Run
 Only one demo is implemented at the moment. Run `bin/console example:local` to launch two processes that
-talk to each other via ObjRef.
+talk to each other via ObjRef. I only tested this with linux, but it should also run on windows just fine.
 
 Have a look into the [LocalCommand.php](https://github.com/UweM/ObjRef-ExampleBundle/blob/master/Command/LocalCommand.php) file to see how it works
 
