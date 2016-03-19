@@ -16,7 +16,7 @@ class LocalCommand extends ContainerAwareCommand {
     protected function configure() {
         $this
             ->setName('example:local')
-            ->setDescription('Show local two-instance communicastion')
+            ->setDescription('Show local two-instance communication')
         ;
     }
 
@@ -73,37 +73,6 @@ class LocalCommand extends ContainerAwareCommand {
 
         proc_close($proc);
 
-return;
-        $ssh = new SSH('nas.d');
-        $ssh->login('root', 'dachwg');
-
-        $ssh->createCmdChannel('php /root/verwaltix/app/console remote:client');
-
-        $transport = new SSHTransport($ssh);
-        $host = new Host($transport, null, $this->getContainer()->get('annotation_reader'));
-        /** @var ContainerInterface $remoteContainer */
-        $remoteContainer = new Proxy($host);
-
-
-        /*
-        $t = $remoteContainer->get('sshtest');
-        $os = new foo();
-        $os->test = new \stdClass;
-        echo $t->foo($os);
-        var_dump($os);
-        */
-
-
-
-        /** @var \SplFileObject $file */
-        /*
-        $file = $remoteContainer->get('vwx.remote.factory')->create('\\SplFileObject', '/root/test.txt', 'r');
-        while (!$file->eof()) {
-            echo '# '.$file->fgets();
-        }
-        //*/
-
-        echo $remoteContainer->get('vwx.remote.file')->read('/root/test.txt');
     }
 
 }
