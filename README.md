@@ -13,5 +13,5 @@ make sure to remove the config.platform.php part out of the generated `composer.
 Only one demo is implemented at the moment. Run `bin/console example:local` to launch two processes that
 talk to each other via ObjRef.
 
-Have a look into the [LocalCommand.php](https://github.com/UweM/ObjRef-ExampleBundle/blob/master/Command/LocalCommand.php) file to look how it works
+Have a look into the [LocalCommand.php](https://github.com/UweM/ObjRef-ExampleBundle/blob/master/Command/LocalCommand.php) file to see how it works
 
