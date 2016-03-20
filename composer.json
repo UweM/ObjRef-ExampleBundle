@@ -1,6 +1,6 @@
 {
     "name": "uwem/objref-examplebundle",
-    "license": "",
+    "license": "Apache-2.0",
     "type": "symfony-bundle",
     "minimum-stability": "dev",
     "require": {
